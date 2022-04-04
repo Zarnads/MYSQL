@@ -20,7 +20,7 @@ module.exports = {
     },
     update: async function (req, res) {
         const sql = ` UPDATE salary
-    SET emp_id = $1,month= $2,year= $3,amount= $4,generateddate= $5 WHERE id = $6 `;
+        SET emp_id = $1,month= $2,year= $3,amount= $4,generateddate= $5 WHERE id = $6 `;
 
         var data = [req.body.emp_id,
             req.body.month,
@@ -35,6 +35,4 @@ module.exports = {
         var data = req.params.id;
         const result = await sails.sendNativeQuery(sql, data);
     }
-
 };
-

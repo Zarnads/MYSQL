@@ -22,17 +22,14 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    
-   name:{
-    type:'string',
-    required:true
-  },
-  createddate:{
-    type:"string",
-    required:true
-  } ,
- 
-  },
 
+    name: {
+      type: 'string',
+      required: true
+    },
+    createddate: {
+      type: "string",
+      required: true
+    },
+  },
 };
-

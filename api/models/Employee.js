@@ -23,30 +23,27 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
-    name:{
-      type:'string',
-      required:true
-  },
-  emp_no:{
-      type:'number',
-      required:true
-  },
-  dept_id:{
-      type:'number',
-      required:true,
-  
-  },
-  join_date:{
-    type:"string",
-    required:true,
-     
-  },
-  end_date:{
-    type:"string",
-      required:true
-  },
+    name: {
+      type: 'string',
+      required: true
+    },
+    emp_no: {
+      type: 'number',
+      required: true
+    },
+    dept_id: {
+      type: 'number',
+      required: true,
 
-  },
+    },
+    join_date: {
+      type: "string",
+      required: true,
 
+    },
+    end_date: {
+      type: "string",
+      required: true
+    },
+  },
 };
-

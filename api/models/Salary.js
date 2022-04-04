@@ -23,28 +23,25 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
-  emp_id:{
-      type:'string',
-      required:true
+    emp_id: {
+      type: 'string',
+      required: true
+    },
+    month: {
+      type: 'number',
+      required: true
+    },
+    year: {
+      type: 'number',
+      required: true
+    },
+    amount: {
+      type: 'number',
+      required: true
+    },
+    generateddate: {
+      type: "string",
+      required: true
+    },
   },
-  month:{
-      type:'number',
-      required:true
-  },
-  year:{
-    type:'number',
-    required:true
-},
-amount:{
-  type:'number',
-  required:true
-},
-generateddate:{
-  type:"string",
-  required:true
-} ,
-
-  },
-
 };
-

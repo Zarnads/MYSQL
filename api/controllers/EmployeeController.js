@@ -19,7 +19,7 @@ module.exports = {
     },
     update: async function (req, res) {
         const sql = ` UPDATE employee
-    SET name = $1,emp_no = $2,dept_id = $3,join_date = $4,end_date = $5 WHERE id = $6 `;
+        SET name = $1,emp_no = $2,dept_id = $3,join_date = $4,end_date = $5 WHERE id = $6 `;
 
         var data = [req.body.name,
         req.body.emp_no,
@@ -34,13 +34,11 @@ module.exports = {
         var data = req.params.id;
         const result = await sails.sendNativeQuery(sql, data);
     },
-
-
-      get:async function(req,res){
-        const sql = `SELECT department.id,department.name, department.createddate,employee.name,employee.emp_no,employee.dept_id,employee.join_date,employee.end_date * FROM employee , department WHERE employee.dept_id = department.id`
-        const data  = await sails.sendNativeQuery(sql);
-        res.send(data);
-      }
-
+    getjoin: async function (req, res) {
+        var sql = `SELECT*
+        FROM department
+        INNER JOIN salary ON department.id=salary.id`;
+        const result = await sails.sendNativeQuery(sql);
+        res.send(result);
+    }
 };
-

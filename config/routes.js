@@ -20,10 +20,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
-  "POST /Department":"DepartmentController.create",
-  "PATCH /Department/:id":"DepartmentController.update",
-  "DELETE /Department/:id":"DepartmentController.delete",
-  "GET /Employee":"Employee.get",
+  "POST /Department": "DepartmentController.create",
+  "PATCH /Department/:id": "DepartmentController.update",
+  "DELETE /Department/:id": "DepartmentController.delete",
+  "GET /Employee/getjoin": "Employee.getjoin",
 
   "CREATE /Employee": "EmployeeController.create",
   "PATCH /Employee": "EmployeeController.update",
@@ -42,6 +42,4 @@ module.exports.routes = {
   * not match any of those, it is matched against static assets.             *
   *                                                                          *
   ***************************************************************************/
-
-
 };
